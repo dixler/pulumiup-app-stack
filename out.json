@@ -1,0 +1,205 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2022-04-20T06:09:28.763466345-07:00",
+            "magic": "242dad22d37c3ac0c3b587fee83094548092ef3c9b9579e833c9a3a0b53742a6",
+            "version": "3.30.0-alpha.1650066136+3de575e4"
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "dixler",
+                "project": "gs-spring-boot",
+                "stack": "ved"
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::example:spring:JarDeployment::my-deployment",
+                "custom": false,
+                "type": "example:spring:JarDeployment",
+                "parent": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:pulumi::default",
+                "custom": true,
+                "id": "94cb8100-d775-4143-8977-dcf948486936",
+                "type": "pulumi:providers:pulumi",
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-0",
+                "custom": true,
+                "id": "04f6e600-cf42-4f8a-88fc-0c5f8143fdd4",
+                "type": "pulumi:pulumi:StackReference",
+                "inputs": {
+                    "name": "dixler/eks-minimal/ved"
+                },
+                "outputs": {
+                    "name": "dixler/eks-minimal/ved",
+                    "outputs": {
+                        "bucketName": "jar-bucket-8cf9817",
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "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"
+                        }
+                    },
+                    "secretOutputNames": [
+                        "kubeconfig"
+                    ]
+                },
+                "parent": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "provider": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:pulumi::default::94cb8100-d775-4143-8977-dcf948486936",
+                "propertyDependencies": {
+                    "name": null
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-1",
+                "custom": true,
+                "id": "0c1cf7a7-9471-48ba-8c57-83648f3fa1f7",
+                "type": "pulumi:pulumi:StackReference",
+                "inputs": {
+                    "name": "dixler/eks-minimal/ved"
+                },
+                "outputs": {
+                    "name": "dixler/eks-minimal/ved",
+                    "outputs": {
+                        "bucketName": "jar-bucket-8cf9817",
+                        "kubeconfig": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "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"
+                        }
+                    },
+                    "secretOutputNames": [
+                        "kubeconfig"
+                    ]
+                },
+                "parent": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "provider": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:pulumi::default::94cb8100-d775-4143-8977-dcf948486936",
+                "propertyDependencies": {
+                    "name": null
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:kubernetes::myProvider",
+                "custom": true,
+                "id": "95f84cb0-fbba-4b38-a5e5-056c5eee6d83",
+                "type": "pulumi:providers:kubernetes",
+                "inputs": {
+                    "kubeconfig": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "version": "3.15.1"
+                },
+                "outputs": {
+                    "kubeconfig": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "version": "3.15.1"
+                },
+                "parent": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "dependencies": [
+                    "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-1"
+                ],
+                "propertyDependencies": {
+                    "kubeconfig": [
+                        "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-1"
+                    ]
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:aws::default_4_37_3",
+                "custom": true,
+                "id": "2c07630e-f35a-4556-946e-6cc6a8e6b5fc",
+                "type": "pulumi:providers:aws",
+                "inputs": {
+                    "region": "us-east-1",
+                    "version": "4.37.3"
+                },
+                "outputs": {
+                    "region": "us-east-1",
+                    "version": "4.37.3"
+                },
+                "sequenceNumber": 1
+            },
+            {
+                "urn": "urn:pulumi:ved::gs-spring-boot::aws:s3/bucketObject:BucketObject::jar",
+                "custom": true,
+                "id": "jar",
+                "type": "aws:s3/bucketObject:BucketObject",
+                "inputs": {
+                    "__defaults": [
+                        "acl",
+                        "forceDestroy",
+                        "key"
+                    ],
+                    "acl": "private",
+                    "bucket": "jar-bucket-8cf9817",
+                    "forceDestroy": false,
+                    "key": "jar",
+                    "source": {
+                        "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                        "hash": "63c99afc44f70eb66afa5571f7ffa38280c6e159dc80694a741a366b61cfa589",
+                        "path": "target/spring-boot-complete-0.0.1-SNAPSHOT.war"
+                    }
+                },
+                "outputs": {
+                    "acl": "private",
+                    "bucket": "jar-bucket-8cf9817",
+                    "bucketKeyEnabled": false,
+                    "cacheControl": "",
+                    "contentDisposition": "",
+                    "contentEncoding": "",
+                    "contentLanguage": "",
+                    "contentType": "binary/octet-stream",
+                    "etag": "26376b484e089c00be098fa9eee3841f-21",
+                    "forceDestroy": false,
+                    "id": "jar",
+                    "key": "jar",
+                    "metadata": {},
+                    "objectLockLegalHoldStatus": "",
+                    "objectLockMode": "",
+                    "objectLockRetainUntilDate": "",
+                    "serverSideEncryption": "",
+                    "source": {
+                        "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                        "hash": "63c99afc44f70eb66afa5571f7ffa38280c6e159dc80694a741a366b61cfa589",
+                        "path": "target/spring-boot-complete-0.0.1-SNAPSHOT.war"
+                    },
+                    "storageClass": "STANDARD",
+                    "tags": {},
+                    "tagsAll": {},
+                    "versionId": "",
+                    "websiteRedirect": ""
+                },
+                "parent": "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:Stack::gs-spring-boot-ved",
+                "dependencies": [
+                    "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-0"
+                ],
+                "provider": "urn:pulumi:ved::gs-spring-boot::pulumi:providers:aws::default_4_37_3::2c07630e-f35a-4556-946e-6cc6a8e6b5fc",
+                "propertyDependencies": {
+                    "bucket": [
+                        "urn:pulumi:ved::gs-spring-boot::pulumi:pulumi:StackReference::ref-0"
+                    ],
+                    "source": null
+                },
+                "sequenceNumber": 1
+            }
+        ]
+    }
+}

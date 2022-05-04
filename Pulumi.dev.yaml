@@ -1,0 +1,4 @@
+config:
+  aws:region: us-east-1
+  pulumiup-app-stack:cluster-stack-reference: dixler/pulumiup-platform-stack/dev
+  pulumiup-app-stack:jar-path: target/spring-boot-complete-0.0.1-SNAPSHOT.war
